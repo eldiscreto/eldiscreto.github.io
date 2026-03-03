@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <html lang="es">
+    <title>El Discreto</title>
+    <link rel="stylesheet" href="tienda.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <!--   <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel="stylesheet" href="spinner.css">
+
+
+</head>
+
+
+<body>
+    <div id="inicio"></div>
+    <header>
+        <logo>
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="logo de la empresa" height="190" width="140">
+                </div>
+        </logo>
+        <a href="#" class="nav-link">
+            <h1>
+                <spann>El Discreto
+                </spann>
+            </h1>
+        </a>
+        <!-- <navlink>
+            <nav>
+                <a onmousedown="playAudio3()" href="#" class="nav-link">inicio</a>
+                <a onmousedown="playAudio3()" href="index.html" class="nav-link">Iniciar sesión</a>
+            </nav>
+        </navlink> -->
+        </a>
+        </li>
+        </ul>
+        </nav>
+        <!-- <nav>
+
+
+
+            header
+            <header class="seccion__header">
+
+                <button id="audio-agregar1"><a href="carritoo.html" class="nav-link">You Cart <a href="carritoo.html"><i class="fa-sharp fa-solid fa-cart-shopping" id="carritoContenedor">0</i></a></a>
+                    </button>
+                </div>
+        </nav> -->
+
+
+
+
+        <ul class="navbar-nav">
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+
+                <i onmousedown="playAudio()" class="fa-sharp fa-solid fa-cart-shopping" id="carritoContenedor">0</i>
+
+            </a>
+            <!-- </li> -->
+        </ul>
+        </nav>
+
+        <div id="filtrosCategorias" class="filtros-categorias-header"></div>
+
+    </header>
+
+
+    <!--  <div class="loadingio-spinner-rolling-wscxo1iiprd">
+        <div class="ldio-o7mfnugekkb">
+            <div></div>
+        </div>
+    </div> -->
+
+    <!--   <body class="hidden">
+        <div class="contenedor-carga" id="pantalla-carga">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body> -->
+    <!--  <button id="botonxd">xd</button> -->
+
+    <audio id="myAudio">
+        <source src="./sounds/agregar1.wav" type="audio/wav">
+    </audio>
+    <audio id="myAudio2">
+        <source src="./sounds/cambiar.mp3" type="audio/mp3">
+        </audio>
+    <audio id="myAudio3">
+        <source src="./sounds/quitar2.wav" type="audio/wav">
+    </audio>
+
+
+    <button onclick="playAudio()" type="button" id="sonido"></button>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+
+        var a = document.getElementById("myAudio2");
+
+        function playAudio2() {
+            a.play();
+        }
+
+        function pauseAudio() {
+            a.pause();
+        }
+
+        var b = document.getElementById("myAudio3");
+
+        function playAudio3() {
+            b.play();
+        }
+
+        function pauseAudio() {
+            b.pause();
+        }
+    </script>
+
+    </audio>
+
+   <!--  <video className="video" id="fondo" loop autoplay muted>
+         <source src="arboles.mp4" type="video/mp4">
+    </video> -->
+    <!-- <div class="mensajee">
+        <button onclick="location.href='javascript:mostrar();'" class="fa-solid fa-message"></button>
+        <div id="flotante" style="display: none;">
+            <button onclick="location.href='javascript:cerrar();'" class="fa-solid fa-message"></button> -->
+
+            <!-- <div class="mensaje">
+                <div class="mensajeee" id="close">
+                    <a href="javascript:cerrar();">cerrar <i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                </div> -->
+               <!--  <div class="title">
+
+                    <h1 class="d-flex justify-content-center mb-3">Mensaje<i class="fa-solid fa-envelope"></i>
+                    </h1>
+                </div> -->
+
+                <div class="todo">
+                    <div class="page-content">
+                        <!-- <form target="_blank" action="https://formsubmit.co/tinkypinky991@gmail.com" method="POST">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="col">
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col" id="mensaje">
+                                    <textarea placeholder="Mensaje" class="form-control" name="message" rows="3" required></textarea>
+                                </div> -->
+
+                            </div>
+
+                            <!-- <div class="col-xs-12 col-md-4">
+                                <div onmousedown="playAudio()" class="boton2"> <button type="submit">Enviar mensaje<i class="fa-sharp fa-solid fa-paper-plane-top"></i></button>
+                                </div>
+                        </form> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="product-container">
+        <main>
+            <div class="productos">
+                <div class="prueba" id="contenedor"></div>
+            </div>
+        </main>
+
+    </div>
+
+    <main>
+        <div class="carrito">
+            <div class="row mt-5 carro" id="contenedor"></div>
+        </div>
+    </main>
+
+    <div class="container-sm">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Carrito</h1>
+                        <button onmousedown="playAudio()" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <div class="modal-acciones">
+                            <button onclick="playAudio()" type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito
+                          </button>
+
+                            <button onclick="playAudio3()" type="button" id="procesarCompra" class="pagar">
+                            Pagar
+                          </button>
+
+
+                            <button onclick="playAudio3()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+                        </div>
+                        <div class="modal-total">
+                            <span class="modal-total-label">Total</span>
+                            <h2 class="text-center" id="precioTotal"></h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </link>
+
+
+    <section class="contenedor-audios">
+        <audio id="audio-agregar1" controls>
+<source src="sounds/agregar1.wav" type="audio/wav">
+</audio>
+        <audio id="audio-quitar2" controls>
+<source src="./sounds/quitar2.wav" type="audio/wav">
+</audio>
+        <audio id="audio-cambiar" controls>
+<source src="./sounds/cambiar.mp3" type="audio/mp3">
+
+
+    </section>
+    <!--  -->
+    <!--  <button id="botonxd">xd</button> -->
+
+
+  
+
+    <div class="arriba">
+        <button onmousedown="playAudio3()" id="arriba" onclick="location.href='#inicio'"><i class="fa-solid fa-arrow-up"></i><p></p>Ir arriba</button>
+    </div>
+    <div class="acciones-finales-ventas">
+        <button type="button" id="descargarResumenVentasFooter" class="btn btn-warning">
+            Descargar resumen de ventas
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="jquery-3.6.3.min.js"></script>
+
+
+
+
+</body>
+
+</html>

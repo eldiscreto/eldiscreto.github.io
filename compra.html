@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Discreto</title>
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="checkout-header">
+        <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="logo de la empresa" height="190" width="140">
+        </a>
+
+        <a href="index.html" class="nav-link">
+            <h1 class="p-3 text-white">
+                <spann>El Discreto</spann>
+            </h1>
+        </a>
+
+        <button type="button" id="exportarEnviarVentas" class="btn btn-header-ventas">
+            Descargar resumen de ventas
+        </button>
+    </header>
+
+    <button id="activarFuncion" class="btn btn-secondary boton mt-2">Click</button>
+
+    <div class="page-content">
+        <main>
+            <div class="title">
+                <h1 class="d-flex justify-content-center mb-3">Realizar Compra</h1>
+            </div>
+
+            <div class="todo">
+                <div class="page-content">
+                    <form id="procesar-pago" action="https://formsubmit.co/tinkypinky991@gmail.com" method="POST" target="formsubmit_iframe">
+                        <input type="hidden" name="_subject" value="Nueva venta - El Discreto">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                        <input type="hidden" id="mensajeCompra" name="ventas">
+                        <p class="checkout-ayuda">Al finalizar, se enviara automaticamente el detalle completo de la venta.</p>
+                        <div class="resumen-total-top">
+                            <span>Total</span>
+                            <strong id="totalProcesoTop">$0</strong>
+                        </div>
+
+                        <div class="container">
+                            <div id="carrito" class="form-group table-responsive">
+                                <table class="table" id="lista-compra">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Sub Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">TOTAL
+                                            <p id="totalProceso"></p>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center d-none" id="spinner">
+                            <div class="spinner">
+                                <div class="dot1"></div>
+                                <div class="dot2"></div>
+                            </div>
+                        </div>
+
+                        <div class="botones">
+                            <div class="boton1">
+                                <button type="button" onmousedown="playAudio()" onclick="location.href='index.html'" class="btn">Seguir comprando</button>
+                                <div onmousedown="playAudio()" class="boton2">
+                                    <button type="submit" class="btn-dark btn-block">Finalizar compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <iframe name="formsubmit_iframe" style="display:none;"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <audio id="myAudio">
+        <source src="./sounds/agregar1.wav" type="audio/wav">
+    </audio>
+    <audio id="myAudio2">
+        <source src="./sounds/cambiar.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myAudio3">
+        <source src="./sounds/quitar2.wav" type="audio/wav">
+    </audio>
+
+    <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() { x.play(); }
+
+        var a = document.getElementById("myAudio2");
+        function playAudio2() { a.play(); }
+
+        var b = document.getElementById("myAudio3");
+        function playAudio3() { b.play(); }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+</body>
+</html>
