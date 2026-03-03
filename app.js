@@ -362,15 +362,17 @@ const clasificacionPorId = {
     37: "dulces",
     38: "dulces",
     39: "dulces",
+        40: "activar",
 };
 
-const ordenClasificaciones = ["comida", "bebidas", "galletas", "dulces", "sin-clasificar"];
+const ordenClasificaciones = ["comida", "bebidas", "galletas", "dulces", "activar" "sin-clasificar"];
 const nombresFiltros = {
     todo: "Todo",
     comida: "Comida",
     bebidas: "Bebidas",
     galletas: "Galletas",
     dulces: "Dulces",
+        ativar: "activar",
     "sin-clasificar": "Sin clasificar",
 };
 
@@ -1638,4 +1640,5 @@ window.onload = function() {
     var load = document.getElementById("pantalla-carga").innerHTML;
     load.style.display = 'none'
 } */
+
 
