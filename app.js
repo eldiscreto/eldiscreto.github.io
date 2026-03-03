@@ -365,14 +365,15 @@ const clasificacionPorId = {
         40: "activar",
 };
 
-const ordenClasificaciones = ["comida", "bebidas", "galletas", "dulces", "activar" "sin-clasificar"];
+const ordenClasificaciones = ["comida", "bebidas", "galletas", "dulces", "helados", "sin-clasificar", "activar"];
 const nombresFiltros = {
     todo: "Todo",
     comida: "Comida",
     bebidas: "Bebidas",
     galletas: "Galletas",
     dulces: "Dulces",
-        ativar: "activar",
+    helados: "Helados",
+    activar: "Activar",
     "sin-clasificar": "Sin clasificar",
 };
 
@@ -931,7 +932,7 @@ async function enviarResumenVentasFormSubmitConAdjunto(resumen, ventas) {
         formData.append("_captcha", "false");
         formData.append("ventas", resumenFinal);
         formData.append("attachment", archivo);
-        await fetch("https://formsubmit.co/tinkypinky991@gmail.com", {
+        await fetch("https://formsubmit.co/carritoeldiscreto@gmail.com", {
             method: "POST",
             body: formData,
             mode: "no-cors",
@@ -957,7 +958,7 @@ function enviarResumenVentasFormSubmit(resumen) {
 
     const formTemp = document.createElement("form");
     formTemp.method = "POST";
-    formTemp.action = "https://formsubmit.co/tinkypinky991@gmail.com";
+    formTemp.action = "https://formsubmit.co/carritoeldiscreto@gmail.com";
     formTemp.target = targetName;
     formTemp.style.display = "none";
 
@@ -1214,6 +1215,15 @@ async function enviarResumenVentasSinBorrar() {
 
 function ordenarProductos(lista) {
     return [...lista].sort((a, b) => {
+        const aEsActivarCorreo = a.nombre.trim().toLowerCase() === "activar correo";
+        const bEsActivarCorreo = b.nombre.trim().toLowerCase() === "activar correo";
+        if (aEsActivarCorreo && !bEsActivarCorreo) {
+            return 1;
+        }
+        if (!aEsActivarCorreo && bEsActivarCorreo) {
+            return -1;
+        }
+
         const aEsSopaipilla = a.nombre.toLowerCase().includes("sopaipilla");
         const bEsSopaipilla = b.nombre.toLowerCase().includes("sopaipilla");
 
@@ -1555,7 +1565,7 @@ function enviarCompra(e) {
 
     if (formulario) {
         formulario.method = "POST";
-        formulario.action = "https://formsubmit.co/tinkypinky991@gmail.com";
+        formulario.action = "https://formsubmit.co/carritoeldiscreto@gmail.com";
         formulario.target = "formsubmit_iframe";
         const campoSiguiente = formulario.querySelector('input[name="_next"]');
         if (campoSiguiente) {
