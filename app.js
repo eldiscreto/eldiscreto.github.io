@@ -99,7 +99,7 @@ const stockProductos = [{
         nombre: "Score",
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
-        precio: "$1.500",
+        precio: "$1.300",
         img: "img/score.png",
     },
     {
@@ -1650,5 +1650,6 @@ window.onload = function() {
     var load = document.getElementById("pantalla-carga").innerHTML;
     load.style.display = 'none'
 } */
+
 
 
