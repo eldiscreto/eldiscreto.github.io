@@ -99,7 +99,7 @@ const stockProductos = [{
         nombre: "Score",
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
-        precio: "$1.300",
+        precio: "$1.500",
         img: "img/score.png",
     },
     {
@@ -310,9 +310,33 @@ const stockProductos = [{
         precio: "$300",
         img: "img/chocolates.jpg",
     },
+                        {
+        id: 40,
+        nombre: "Café",
+        cantidad: 1,
+        desc: "Presiona las veces que quieras llevar el mismo producto",
+        precio: "$800",
+        img: "/logo.jpg",
+    },
+                        {
+        id: 41,
+        nombre: "Té",
+        cantidad: 1,
+        desc: "Presiona las veces que quieras llevar el mismo producto",
+        precio: "$800",
+        img: "/logo.jpg",
+    },
+                        {
+        id: 42,
+        nombre: "Calzones rotos 2x$1.000",
+        cantidad: 1,
+        desc: "Presiona las veces que quieras llevar el mismo producto",
+        precio: "$1.000",
+        img: "/logo.jpg",
+    },
 
     {
-        id: 40,
+        id: 43,
         nombre: "Activar correo",
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
@@ -362,7 +386,10 @@ const clasificacionPorId = {
     37: "dulces",
     38: "dulces",
     39: "dulces",
-        40: "activar",
+        40: "bebidas",
+        41: "bebidas",
+        42: "comida",
+        43: "activar",
 };
 
 const ordenClasificaciones = ["comida", "bebidas", "galletas", "dulces", "helados", "sin-clasificar", "activar"];
