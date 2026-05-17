@@ -316,7 +316,7 @@ const stockProductos = [{
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
         precio: "$800",
-        img: "/logo.jpg",
+        img: "img/cafe.jpeg",
     },
                         {
         id: 41,
@@ -324,7 +324,7 @@ const stockProductos = [{
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
         precio: "$800",
-        img: "/logo.jpg",
+        img: "img/te.jpeg",
     },
                         {
         id: 42,
@@ -332,7 +332,7 @@ const stockProductos = [{
         cantidad: 1,
         desc: "Presiona las veces que quieras llevar el mismo producto",
         precio: "$1.000",
-        img: "/logo.jpg",
+        img: "img/calzonesrotos.jpeg",
     },
 
     {
